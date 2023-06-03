@@ -38,6 +38,10 @@ ul {
   list-style: none;
 }
 
+.img {
+  display: block;
+}
+
 .container {
   width: 100%;
   max-width: 1158px;
@@ -198,8 +202,16 @@ ul {
 }
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .feature-list {
@@ -256,9 +268,7 @@ ul {
 /*-----------TEAM------------*/
 .team {
   background-color: #f4f4fd;
-  padding-right: auto;
-  padding-bottom: 120px;
-  padding-right: auto;
+  padding: 120px 0;
 }
 
 .team-title-list {
@@ -351,10 +361,6 @@ ul {
 }
 
 /*---------PORTFOLIO------*/
-.img {
-  display: block;
-}
-
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -416,7 +422,7 @@ ul {
 
 /*-----------FILTER CARDS-----*/
 .img {
-  display: flex;
+  display: block;
   max-width: 100%;
   height: auto;
   background: url(tp238-pf-s73-05-mockup.jpg);
