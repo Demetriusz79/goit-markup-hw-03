@@ -160,8 +160,7 @@ ul {
 
 .hero-title {
   max-width: 496px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .hero-button-container {
@@ -246,6 +245,7 @@ ul {
 
 .products-list-item {
   width: calc((100% - 24px * 2) / 3);
+  padding-bottom: 0px;
 }
 
 /*-----------TEAM------------*/
@@ -415,6 +415,10 @@ ul {
   gap: 24px;
 }
 
+.fcards-list-item {
+  width: calc((100% - 24px * 2) / 3);
+}
+
 .fcards-tytle {
   font-weight: 500;
   font-size: 20px;
@@ -428,4 +432,5 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-top: 8px;
 }
