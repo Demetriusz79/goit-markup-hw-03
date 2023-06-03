@@ -50,8 +50,7 @@ ul {
 
 /*-------------HEADER------------*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
 .header-navigation {
@@ -87,13 +86,12 @@ ul {
   text-transform: uppercase;
   color: #4d5ae5;
   display: flex;
-  margin-right: auto;
+  margin-right: 76px;
 }
 
 .header-menu-list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 
 .header-menu-item {
@@ -110,6 +108,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  padding: 24px 0;
 }
 
 .header-contacts {
@@ -146,7 +145,7 @@ ul {
 /*-------------HERO------------*/
 .hero {
   background-color: var(--title-color);
-  padding: 188px 472px 292px 472px;
+  padding: 188px 0;
 }
 
 .hero-container .hero-title {
@@ -179,7 +178,8 @@ ul {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: flex;
+  display: block;
+  border: none;
   padding: 16px 32px;
   margin-top: 48px;
   margin-right: auto;
@@ -195,6 +195,11 @@ ul {
 .feature {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 .feature-list {
@@ -224,7 +229,7 @@ ul {
 
 /*-------------PRODUCTS------------*/
 .products {
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .products-title {
@@ -256,18 +261,21 @@ ul {
   padding-right: auto;
 }
 
+.team-title-list {
+  background-color: #ffffff;
+  display: flex;
+  gap: 24px;
+}
+
 .team-list-item {
   background-color: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
-
-.team-title-list {
-  background-color: #ffffff;
-  display: flex;
-  gap: 24px;
-  width: calc((100% - 24px * 3) / 4);
+.team-cards {
+  padding: 32px 16px;
 }
 
 .team-title {
@@ -290,6 +298,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--title-color);
   margin-top: 32px;
+  margin-bottom: 8px;
 }
 .team-list-prof {
   font-size: 16px;
@@ -317,6 +326,8 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--link-btm-color);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .span-footer {
@@ -340,6 +351,18 @@ ul {
 }
 
 /*---------PORTFOLIO------*/
+.img {
+  display: block;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.filter {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .filters-list {
   display: flex;
@@ -349,6 +372,7 @@ ul {
   padding-left: auto;
   padding-bottom: 72px;
   justify-content: center;
+  margin-bottom: 72px;
 }
 
 .filters-button {
@@ -384,6 +408,7 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  border: 1px solid transparent;
 }
 .header-menu-link:hover {
   color: #404bbf;
@@ -391,7 +416,7 @@ ul {
 
 /*-----------FILTER CARDS-----*/
 .img {
-  display: block;
+  display: flex;
   max-width: 100%;
   height: auto;
   background: url(tp238-pf-s73-05-mockup.jpg);
@@ -399,11 +424,9 @@ ul {
 }
 
 .fcards-content {
-  padding-top: 32px;
-  padding-right: auto;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
   background: #ffffff;
+  border-top: none;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -413,6 +436,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 
 .fcards-list-item {
@@ -425,6 +449,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
+  margin-bottom: 8px;
 }
 
 .fcards-text {
